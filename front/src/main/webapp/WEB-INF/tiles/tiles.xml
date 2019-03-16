@@ -4,14 +4,14 @@
 	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 	
 <tiles-definitions>
-	<definition name="base" template="/WEB-INF/main/main/main.jsp">
-		<put-attribute name="header" value="/WEB-INF/tiles/layout/bm_header.jsp"/>
-		<put-attribute name="nav" value="/WEB-INF/tiles/layout/bm_nav.jsp"/>
-		<put-attribute name="footer" value="/WEB-INF/tiles/layout/bm_footer.jsp"/>
+	<definition name="main" template="/WEB-INF/main/main.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/layout/main_header.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/tiles/layout/main_content.jsp"/>
+		<put-attribute name="footer" value="/WEB-INF/tiles/layout/main_footer.jsp"/>
 	</definition>
 	
-<!-- 	<definition name="main" extends="base"> -->
-<!--       <put-attribute name="body" value="/WEB-INF/main/main.jsp" /> -->
+<!-- 	<definition name="main" extends="main"> -->
+<!--       <put-attribute name="body" value="/WEB-INF/tiles/layout/main_content.jsp"/> -->
 <!--   </definition> -->
 
 <!--   <definition name="*/main" extends="base"> -->
