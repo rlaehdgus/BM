@@ -4,6 +4,6 @@
 	"http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.dong.bm.dto.MemberVo" alias="memberVo"/>
+		<typeAlias type="com.dong.bm.member.dto.MemberVo" alias="memberVo"/>
 	</typeAliases>
 </configuration>

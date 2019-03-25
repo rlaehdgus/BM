@@ -4,21 +4,27 @@
 	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 	
 <tiles-definitions>
-	<definition name="main" template="/WEB-INF/main/main.jsp">
+	<definition name="book_layout" template="/WEB-INF/tiles/layout/book_layout.jsp">
 		<put-attribute name="header" value="/WEB-INF/tiles/layout/main_header.jsp"/>
-		<put-attribute name="body" value="/WEB-INF/tiles/layout/main_content.jsp"/>
+		<put-attribute name="body" value=""/>
 		<put-attribute name="footer" value="/WEB-INF/tiles/layout/main_footer.jsp"/>
 	</definition>
 	
-<!-- 	<definition name="main" extends="main"> -->
-<!--       <put-attribute name="body" value="/WEB-INF/tiles/layout/main_content.jsp"/> -->
-<!--   </definition> -->
+<!-- 	<definition name="book_manage_layout" template="/WEB-INF/main/shop/shop_bookList.jsp"> -->
+<!-- 		<put-attribute name="header" value="/WEB-INF/tiles/layout/main_header.jsp"/> -->
+<!-- 		<put-attribute name="body" value=""/> -->
+<!-- 		<put-attribute name="footer" value="/WEB-INF/tiles/layout/main_footer.jsp"/> -->
+<!-- 	</definition> -->
+	
+	<definition name="/WEB-INF/main/*" extends="book_layout">
+      <put-attribute name="body" value="/WEB-INF/main/{1}.jsp"/>
+  </definition>
 
-<!--   <definition name="*/main" extends="base"> -->
-<!--       <put-attribute name="body" value="/WEB-INF/main/{1}/main.jsp" /> -->
-<!--   </definition> -->
+  <definition name="/WEB-INF/main/member/*" extends="book_layout">
+      <put-attribute name="body" value="/WEB-INF/main/member/{1}.jsp" />
+  </definition>
   
-<!--   <definition name="*/*/main" extends="base"> -->
-<!--       <put-attribute name="body" value="/WEB-INF/main/{1}/{2}/main.jsp" /> -->
-<!--   </definition> -->
+  <definition name="/WEB-INF/main/shop/*" extends="book_layout">
+      <put-attribute name="body" value="/WEB-INF/main/shop/{1}.jsp" />
+  </definition>
 </tiles-definitions>

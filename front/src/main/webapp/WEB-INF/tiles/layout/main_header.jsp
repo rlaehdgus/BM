@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!-- Main wrapper -->
-<!-- 	<div class="wrapper" id="wrapper"> -->
+	<div class="wrapper" id="wrapper">
 		<!-- Header -->
 		<header id="wn__header" class="header__area header__absolute sticky__header">
 			<div class="container-fluid">
@@ -20,7 +20,7 @@
 									<div class="megamenu mega03">
 										<ul class="item item03">
 											<li class="title">Shop Layout</li>
-											<li><a href="shop-grid.html">Shop Grid</a></li>
+											<li><a href="/shop_bookList.do">Shop Grid</a></li>
 											<li><a href="single-product.html">Single Product</a></li>
 										</ul>
 										<ul class="item item03">
@@ -321,3 +321,18 @@
 			</div>		
 		</header>
 		<!-- //Header -->
+		<!-- Start Search Popup -->
+		<div class="brown--color box-search-content search_active block-bg close__top">
+			<form id="search_mini_form" class="minisearch" action="#">
+				<div class="field__search">
+					<input type="text" placeholder="Search entire store here...">
+					<div class="action">
+						<a href="#"><i class="zmdi zmdi-search"></i></a>
+					</div>
+				</div>
+			</form>
+			<div class="close__wrap">
+				<span>close</span>
+			</div>
+		</div>
+		<!-- End Search Popup -->

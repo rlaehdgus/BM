@@ -17,12 +17,12 @@
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<beans:property name="prefix" value="/WEB-INF/main/" />
+		<beans:property name="prefix" value="/WEB-INF/" />
 		<beans:property name="suffix" value=".jsp" />
 		<beans:property name="order"  value="2" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.dong.bm.controller" />
+	<context:component-scan base-package="com.dong.bm.*" />
 	
 	<!-- Tiles -->
 	<beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
