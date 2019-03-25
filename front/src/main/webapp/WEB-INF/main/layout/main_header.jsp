@@ -202,12 +202,12 @@
 								</div>
 								<!-- End Shopping Cart -->
 							</li>
-							<li class="setting__bar__icon"><a class="setting__active" href="#"></a>
+							<!-- <li class="setting__bar__icon"><a class="setting__active" href="#"></a>
 								<div class="searchbar__content setting__block">
 									<div class="content-inner">
 										<div class="switcher-currency">
 											<strong class="label switcher-label">
-												<span>Currency</span>
+												<span>회원 정보</span>
 											</strong>
 											<div class="switcher-options">
 												<div class="switcher-currency-trigger">
@@ -269,6 +269,9 @@
 										</div>
 									</div>
 								</div>
+							</li> -->
+							<li>
+							
 							</li>
 						</ul>
 					</div>

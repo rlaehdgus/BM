@@ -4,10 +4,10 @@
 	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 	
 <tiles-definitions>
-	<definition name="book_layout" template="/WEB-INF/tiles/layout/book_layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/tiles/layout/main_header.jsp"/>
+	<definition name="book_layout" template="/WEB-INF/main/layout/book_layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/main/layout/main_header.jsp"/>
 		<put-attribute name="body" value=""/>
-		<put-attribute name="footer" value="/WEB-INF/tiles/layout/main_footer.jsp"/>
+		<put-attribute name="footer" value="/WEB-INF/main/layout/main_footer.jsp"/>
 	</definition>
 	
 <!-- 	<definition name="book_manage_layout" template="/WEB-INF/main/shop/shop_bookList.jsp"> -->
@@ -16,15 +16,15 @@
 <!-- 		<put-attribute name="footer" value="/WEB-INF/tiles/layout/main_footer.jsp"/> -->
 <!-- 	</definition> -->
 	
-	<definition name="/WEB-INF/main/*" extends="book_layout">
+	<definition name="main/*" extends="book_layout">
       <put-attribute name="body" value="/WEB-INF/main/{1}.jsp"/>
   </definition>
 
-  <definition name="/WEB-INF/main/member/*" extends="book_layout">
+  <definition name="main/member/*" extends="book_layout">
       <put-attribute name="body" value="/WEB-INF/main/member/{1}.jsp" />
   </definition>
   
-  <definition name="/WEB-INF/main/shop/*" extends="book_layout">
+  <definition name="main/shop/*" extends="book_layout">
       <put-attribute name="body" value="/WEB-INF/main/shop/{1}.jsp" />
   </definition>
 </tiles-definitions>

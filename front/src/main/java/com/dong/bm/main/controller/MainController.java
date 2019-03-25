@@ -15,7 +15,7 @@ public class MainController {
 	public String home() {
 		logger.info("Start main page!");
 		
-		return "tiles/layout/book_layout";
+		return "main/main";
 	}
 	
 }
